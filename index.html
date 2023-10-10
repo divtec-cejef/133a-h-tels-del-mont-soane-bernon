@@ -16,6 +16,90 @@
 
     <!-- FORMULAIRE DE RESERVATION -->
     <!-- au cas ou t'aurais pas compris place ton fromulaire ici. A+ Manfred -->
+    <form action="" method="post">
+        <ul>
+            <li>
+                <label>Hôtel</label>
+                <label for="list_hotels">
+                    <select name="hotels" id="list_hotels">
+                        <option>-- Sélectionnez un hôtel --</option>
+                        <option>Hôtel City</option>
+                        <option>Hôtel National</option>
+                        <option>Hôtel Le Midi</option>
+                        <option>Hôtel Victoria</option>
+                    </select>
+                </label>
+            </li>
+            <li>
+                <label for="nbrChambre">Nombre de chambres : </label>
+                <input id="nbrChambre" name="nbrChambre" type="number">
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Type de chambre</legend>
+                    <div>
+                            <label>
+                                <input type="radio" name="tchambre" value="std1" required>
+                                <span>Standard simple</span>
+                            </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="tchambre" value="std2">
+                            <span>Standard double</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="tchambre" value="sup1">
+                            <span>Supérieure simple</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="tchambre" value="sup2">
+                            <span>Supérieure double</span>
+                        </label>
+                    </div>
+                </fieldset>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Option disponible</legend>
+                    <label>
+                        <div>
+                            <input type="checkbox" name="petitdej">
+                            <span id="petitdej">Petit déjeuner</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="tv">
+                            <span id="tv">TV</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="journaux">
+                            <span id="journaux">Journaux</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="ordi">
+                            <span id="ordi">Ordinateur</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="wifi">
+                            <span id="wifi">Accès Wifi</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="animal">
+                            <span id="animal">Animaux de compagnie</span>
+                        </div>
+                    </label>
+                </fieldset>
+            </li>
+            <li>
+                <button id="reset">Reset</button>
+                <button id="btReserver">Réserver</button>
+            </li>
+        </ul>
+    </form>
 </div>
 
 <!-- RESERVATION -->
